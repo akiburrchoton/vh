@@ -14,24 +14,37 @@ get_header();
 $container = get_theme_mod('understrap_container_type');
 ?>
 
-<section class="hero banner-generic short-banner">
-    <div class="hero-content">
-        <div class="banner-container">
-            <div class="single-slider" style="background-image: url('<?php echo IMG . '/breakdown_banner.jpg' ?>');">
-                <div class="slider-content">
-                    <div class="container">
-                        <div class="info-holder">
+<div class="wrapper page-wrapper">
 
-                            <h1 class="slider-title">Contact Us</h1>
-                            <h4>Our friendly team is here to help and always on hand.</h4>
+	<div id="primary">
 
+		<main class="site-main" id="main" role="main">
+
+
+            <section class="hero banner-generic short-banner">
+                <div class="hero-content">
+                    <div class="banner-container">
+                        <div class="single-slider" style="background-image: url('<?php echo IMG.'/breakdown_banner.jpg' ?>');">    
+                            <div class="slider-content">
+                                <div class="container">
+                                    <div class="info-holder">
+                                    
+                                        <h1 class="slider-title">Contact Us</h1>             
+                                        <h4>Our friendly team is here to help and always on hand.</h4>
+                                    
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section> <!-- .banner-generic -->
+            </section> <!-- .banner-generic -->
+
+            
+        </main><!-- #main -->
+
+</div><!-- #primary -->
+
 
 
 

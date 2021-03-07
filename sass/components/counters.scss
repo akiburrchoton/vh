@@ -1,0 +1,25 @@
+.counters{
+    padding: 20px 0;
+}
+
+.counter-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    @media (max-width: 768px){
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+.single-counter{
+    outline: none;
+    .count{
+        color: $primary;
+        font-weight: 700;
+    }
+    .body-2, h4{
+        margin: 0;
+    }
+}

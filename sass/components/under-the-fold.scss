@@ -1,0 +1,84 @@
+.under-the-fold{
+    background-color: #F2F4F7;
+    padding: 25px 0;
+    .container, .logo-holder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    p, .logo-holder{
+        margin: 0;
+
+        @media (max-width: 768px){
+            max-width: 50%;
+        }
+    }
+    .logo{
+        margin-right: 93px;
+        &:last-child{
+            margin-right: 0;
+        }
+        
+        @media (max-width: 768px){
+            margin-right: 50px;
+        }
+        svg{
+            path{
+                transition: .2s all;
+            }
+        }
+        &:hover{
+            
+            svg{
+                path{
+                    fill: $primary;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+    p{
+        font-weight: 700;
+    }
+}
+
+
+.under-the-fold-flex{
+    .container{
+        @media (max-width: 1550px){
+            flex-direction: column;
+
+            .logo-holder{
+                max-width: 100%;
+            }
+
+            h2, p, a{
+                width: 100%;
+                max-width: 100%;
+            }
+            .lead-text{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+    
+    @media (max-width: 600px){
+        margin-top: 0;
+        .lead-text{
+            
+            font-size: 14px;
+            line-height: 180%;
+            
+        }
+        .logo-holder{
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .logo{
+            width: 50%;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+}

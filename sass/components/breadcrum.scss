@@ -1,0 +1,56 @@
+#breadcrum{
+
+    .container{
+        padding-top: 40px;
+        padding-bottom: 25px;
+        position: relative;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding-left: 0;
+        padding-right: 0;
+
+    
+
+        @media (max-width: 600px){
+            padding-top: 30px;
+            padding-bottom: 20px;
+            
+        }
+        
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            height: 1px;
+            left: 0;
+            background: rgba(208, 211, 214, 0.6);
+        }
+        overflow-x: auto;
+        white-space: nowrap;
+        
+        .step{
+            color: $darkgrey;
+            opacity: .4;
+            font-weight: 600;
+            svg{
+                padding: 0 10px;
+            }
+            &:last-child {
+                svg{
+                    display: none;
+                }
+            }
+            @media (max-width: 600px){
+                font-size: 14px;
+            }
+        }
+
+        .step.current{
+            color: $primary;
+            opacity: 1;
+        }
+    }
+}

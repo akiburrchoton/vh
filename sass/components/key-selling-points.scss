@@ -1,0 +1,129 @@
+#key-selling-points{
+    .container{
+        flex-direction: row-reverse;
+
+        @media (max-width: 1200px){
+            flex-direction: column-reverse;
+        }
+
+        .section-title{
+            margin-bottom: 50px;
+        }
+
+        .parallax-images{
+            flex-direction: row-reverse;
+            margin: 0;
+            //margin-left: 60px;
+            margin-right: 50px;
+            
+            @media (max-width: 1200px){
+                margin-left: 0;
+            }
+
+            .image-one{
+                margin: 0;
+                @media (max-width: 1200px){
+                    width: 50%;
+                }
+            }
+            .image-two{
+                margin-top: 70px;
+                margin-left: 35px;
+                @media (max-width: 1200px){
+                    margin-left: 20px;
+                    width: 50%;
+                }
+            }
+
+        }
+
+        .text-btns{
+            margin-left: auto;
+            margin-right: 0;
+            @media (max-width: 1200px){
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+            }
+        }
+
+        .breakdown-points{
+            display: flex;
+            flex-wrap: wrap;
+            
+            .single-point{
+                width: calc(50% - 30px);
+                @media (max-width: 480px){
+                    width: 100%;
+                    margin-bottom: 40px;
+                    margin-right: 0;
+                }
+                display: block;
+                margin-right: 30px;
+                margin-bottom: 60px;
+                overflow: hidden;
+                transition: .2s all;
+
+                .item-detail{
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 180%;
+                    color: #45515C;
+                }
+
+                img,p{
+                    margin-bottom: 10px;
+                }
+                
+                @media (max-width: 480px){
+                    &:nth-child(n+3) {
+                        height: 0;
+                        margin: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            #collapse-breakdown{
+                @media (min-width: 480px){
+                    display: none;
+                }
+                background: #F2F4F7;
+                border-radius: 22.5px;
+                width: 100%;
+                border: none;
+                outline: none;
+                font-family: 'Modelica';
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #45515C;
+                padding: 13px 0;
+
+                span{
+                    padding-left: 7px;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+    }
+}
+
+.breakdown-show{
+    span svg{
+        transform: rotate(-180deg);
+    }
+}
+
+.breakdown-points.breakdown-show .single-point:nth-child(n+3){
+    height: auto !important;
+    margin-bottom: 40px !important;
+    opacity: 1 !important;
+}

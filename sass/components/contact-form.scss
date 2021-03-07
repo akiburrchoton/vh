@@ -1,0 +1,201 @@
+
+.contact-form{
+
+    .section-title{
+        margin-bottom: 40px !important;
+    }
+
+    .contact-subtitle{
+        max-width: 585px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 150%;
+        font-family: 'Modelica';
+        margin-bottom: 60px;
+        letter-spacing: 0.01em;
+    }
+    
+    .required-text{
+        margin-bottom: 50px;
+    }
+
+    padding: 145px 0;
+    @media (max-width: 1024px){
+        padding: 80px 0;
+    }
+    @media (max-width: 600px){
+        padding: 60px 0;
+    }
+    .section-title{
+        max-width: 540px;
+        margin-bottom: 60px;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        *{
+            @media (max-width: 768px){
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        .checkbox-submit{
+            @media (max-width: 768px){
+                flex-direction: column;
+                width: 100%;
+
+                .the-check{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        #contact-form-submit{
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .checkbox-submit{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        input[type="checkbox"]{
+            width: 15px;
+            height: 15px;
+            margin: 0;
+            position: relative;
+            top: 2px;
+            margin-right: 5px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        label{
+            display: contents;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #45515C;
+            &:hover{
+                cursor: pointer;
+            }
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+        }
+    }
+}
+
+.contact-us-contact-form{
+    form{
+        div{
+            width: calc(50% - 45px);
+
+            @media (max-width: 768px){
+                width: calc(50% - 25px)
+            }
+            @media (max-width: 600px){
+                width: 100%;
+            }
+            input{
+                width: 100%;
+                box-sizing: border-box;
+            }
+           
+        }
+        .message, .checkbox-submit{
+            width: 100%;
+            margin-right: 0 !important;
+        }
+
+        .the-check{
+            width: auto;
+        }
+    }
+}
+
+
+
+// Contact page form
+
+.upload{
+    width: 100% !important;
+}
+
+#upload-button{
+    border: 1px solid #D0D3D6;
+    background-color: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding: 13px 15px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: left;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #D0D3D6;
+    border-radius: 5px;
+
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxNiAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNDU4MzMgMTAuNTE3OUMxLjI1IDEwLjcyOTkgMS4yNSAxMS4wNjkyIDEuNDU4MzMgMTEuMjM4OEwyLjI5MTY3IDEyLjA4NzFDMi40NTgzMyAxMi4yOTkxIDIuNzkxNjcgMTIuMjk5MSAzIDEyLjA4NzFMNi45MTY2NyA3Ljk3MzIxVjE4LjQ5MTFDNi45MTY2NyAxOC43ODc5IDcuMTI1IDE5IDcuNDE2NjcgMTlIOC41ODMzM0M4LjgzMzMzIDE5IDkuMDgzMzMgMTguNzg3OSA5LjA4MzMzIDE4LjQ5MTFWNy45NzMyMUwxMi45NTgzIDEyLjA4NzFDMTMuMTY2NyAxMi4yOTkxIDEzLjUgMTIuMjk5MSAxMy42NjY3IDEyLjA4NzFMMTQuNSAxMS4yMzg4QzE0LjcwODMgMTEuMDY5MiAxNC43MDgzIDEwLjcyOTkgMTQuNSAxMC41MTc5TDguMzMzMzMgNC4yNDEwN0M4LjEyNSA0LjAyOTAyIDcuODMzMzMgNC4wMjkwMiA3LjYyNSA0LjI0MTA3TDEuNDU4MzMgMTAuNTE3OVpNMC41IDIuMjA1MzZIMTUuNUMxNS43NSAyLjIwNTM2IDE2IDEuOTkzMyAxNiAxLjY5NjQzVjAuNTA4OTI5QzE2IDAuMjU0NDY0IDE1Ljc1IDAgMTUuNSAwSDAuNUMwLjIwODMzMyAwIDAgMC4yNTQ0NjQgMCAwLjUwODkyOVYxLjY5NjQzQzAgMS45OTMzIDAuMjA4MzMzIDIuMjA1MzYgMC41IDIuMjA1MzZaIiBmaWxsPSIjRTYyNjQxIi8+Cjwvc3ZnPgo=");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: calc(100% - 15px);
+}
+
+
+.contact-us-contact-form{
+    form{
+        margin-right: -90px;
+        justify-content: flex-start;
+        @media (max-width: 768px){
+            margin-right: 0;
+        }
+        div{
+            width: calc(50% - 90px);
+            margin-right: 90px;
+            @media (max-width: 768px){
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        input{
+            box-sizing: border-box;
+        }
+        select{
+            width: 100%;
+        }
+
+        .message,
+        .upload,
+        .checkbox-submit{
+            margin-right: 90px !important;
+
+            @media (max-width: 768px){
+                margin-right: 0px !important;
+            }
+        }
+
+        .checkbox-submit{
+            @media (max-width: 768px){
+                justify-content: flex-start;
+            }
+            .the-check{
+                @media (max-width: 768px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
